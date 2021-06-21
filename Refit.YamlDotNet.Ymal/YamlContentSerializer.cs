@@ -54,7 +54,7 @@ namespace Refit.YamlDotNet.Ymal
         {
             if (item == null)
                 throw new ArgumentNullException(nameof(item));
-            var content = new StringContent(serializer.Value.Serialize(item), Encoding.UTF8, "application/json");
+            var content = new StringContent(serializer.Value.Serialize(item), Encoding.UTF8, "application/yaml");
             return content;
         }
     }
